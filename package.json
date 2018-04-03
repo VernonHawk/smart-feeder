@@ -101,5 +101,9 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VernonHawk/smart-feeder.git"
   }
 }
