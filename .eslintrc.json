@@ -1,0 +1,106 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "extends": "plugin:react/recommended",
+    "rules": {
+        "for-direction": "error",
+        "no-cond-assign": "warn",
+        "no-constant-condition": "warn",
+        "no-dupe-args": "error",
+        "no-dupe-keys": "error",
+        "no-duplicate-case": "error",
+        "no-empty": [
+            "warn", 
+            { "allowEmptyCatch": true }
+        ],
+        "no-empty-character-class":"warn",
+        "no-ex-assign": "warn",
+        "no-extra-boolean-cast": "warn",
+        "no-extra-semi": "warn",
+        "no-func-assign": "warn",
+        "no-inner-declarations": "warn",
+        "no-irregular-whitespace": [
+            "warn",
+            { "skipStrings": false }
+        ],
+        "no-obj-calls": "error",
+        "no-regex-spaces": "warn",
+        "no-sparse-arrays": "warn",
+        "no-template-curly-in-string": "warn",
+        "no-unexpected-multiline": "warn",
+        "no-unreachable": "error",
+        "no-unsafe-finally": "warn",
+        "no-unsafe-negation": "warn",
+        "use-isnan": "error",
+        "valid-typeof": "error",
+
+        "array-callback-return": "error",
+        "curly": "warn",
+        "default-case": "warn",
+        "no-case-declarations": "warn",
+        "no-empty-function": "warn",
+        "no-extra-bind": "warn",
+        "no-fallthrough": "warn",
+        "no-floating-decimal": "warn",
+        "no-global-assign": "error",
+        "no-octal": "warn",
+        "no-param-reassign": "error",
+        "no-redeclare": [
+            "error",
+            { "builtinGlobals": true }
+        ],
+        "no-return-assign": "warn",
+        "no-return-await": "warn",
+        "no-self-assign": [
+            "error",
+            { "props": true }
+        ],
+        "no-self-compare": "warn",
+        "no-throw-literal": "warn",
+
+        "yoda": [
+            "warn",
+            "never",
+            { "exceptRange": true }
+        ],
+
+        "no-shadow": [
+            "error", 
+            { "builtinGlobals": true }
+        ],
+        "no-use-before-define": [
+            "error",
+            { "functions": false }
+        ],
+
+        "quotes": [
+            "warn",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+
+        "constructor-super": "error",
+        "no-const-assign": "error",
+
+        "react/no-typos": "error",
+        "react/prop-types": "off"
+    }
+}

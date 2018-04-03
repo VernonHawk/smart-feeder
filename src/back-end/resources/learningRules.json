@@ -1,0 +1,13 @@
+{ 
+    "foodLeft": {
+        "none": 5,
+        "little": 15,
+        "middle": 40,
+        "much": 100
+    },
+    "timePassed": {
+        "less": 80,
+        "normal": 120,
+        "more": 160
+    }
+}
