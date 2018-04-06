@@ -1,7 +1,7 @@
 const express = require("express");
 
 const Animal = require("../models/Animal");
-const { verifyJWToken, createJWToken } = require("../common/tokens");
+const { createJWToken } = require("../common/tokens");
 
 const { decodeRequestToken } = require("../common/middleware");
 const { getNewConfig } = require("../common/learning");

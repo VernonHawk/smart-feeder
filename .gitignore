@@ -19,4 +19,6 @@
 .env.test.local
 .env.production.local
 
+/src/back-end/resources/config.json
+
 npm-debug.log*

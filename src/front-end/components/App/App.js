@@ -17,9 +17,9 @@ export default class App extends Component {
 
         if (token) {
             fetchConfig(token)
-            .then(() => this.setState({ isConfigured: true }))
-            .catch(err => console.error(`Checking for config: ${err.message}`))
-            .finally(() => this.setState({ isLoaded: true }));
+                .then(() => this.setState({ isConfigured: true }))
+                .catch(err => console.error(`Checking for config: ${err.message}`))
+                .finally(() => this.setState({ isLoaded: true }));
         } else {
             this.setState({ isLoaded: true });
         }

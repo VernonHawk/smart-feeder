@@ -85,7 +85,7 @@ export default class Config extends Component {
         const data  = target.dataset;
 
         const partial = this.state[data.var];
-        const value = target.value === "" ? 0 : parseInt(target.value, 10);
+        const value = target.value === "" ? 0 : parseInt(target.value);
 
         partial[data.size] = value;
         

@@ -72,7 +72,17 @@
         ],
         "no-self-compare": "warn",
         "no-throw-literal": "warn",
-
+        "no-unused-expressions": "warn",
+        "no-useless-call": "warn",
+        "no-useless-concat": "warn",
+        "no-useless-escape": "warn",
+        "no-useless-return": "warn",
+        "prefer-promise-reject-errors": "warn",
+        "radix": [
+            "warn",
+            "as-needed"
+        ],
+        "require-await": "error",
         "yoda": [
             "warn",
             "never",
@@ -83,6 +93,12 @@
             "error", 
             { "builtinGlobals": true }
         ],
+        "no-undef": [
+            "error",
+            { "typeof": true }
+        ],
+        "no-undef-init": "warn",
+        "no-unused-vars": "warn",
         "no-use-before-define": [
             "error",
             { "functions": false }

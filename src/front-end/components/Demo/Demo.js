@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 
 import CatImage from "./CatImage";
 import FeedPanel from "./FeedPanel/FeedPanel";
@@ -42,7 +41,7 @@ export default class Demo extends Component {
     onFeedInputChange = (e) => {
         const value = e.target.value === "" ? 
                       1 : 
-                      parseInt(e.target.value, 10);
+                      parseInt(e.target.value);
 
         this.setState({ food: value });
     }

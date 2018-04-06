@@ -19,7 +19,7 @@ function getNewConfig({ id, food, time }) {
 } 
 
 function generateNewFood(id, lastFood, currFoodObj) {
-    return new Promise((resolve, reject) => {
+    return new Promise( resolve => {
         const foodLeft = 100 - lastFood; // %
         let newFood = currFoodObj;
         
@@ -42,7 +42,7 @@ function generateNewFood(id, lastFood, currFoodObj) {
 }
 
 function generateNewTime(id, lastTime, currTimeObj) {
-    return new Promise((resolve, reject) => {
+    return new Promise( resolve => {
         const timePassed = (lastTime / currTimeObj.normal) * 100; // %
         let newTime = currTimeObj;
 
