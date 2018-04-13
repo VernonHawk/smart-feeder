@@ -13,9 +13,9 @@ router.get("/", (req, res) => {
         .then( decodedToken => {
             Animal.findById(decodedToken.data)
                 .exec( (err, animal) => {
-                    if (err) {
-                        res.status(400)
-                            .json({success: false, message: err});
+                    if (err || !animal) {
+                        return res.status(400)
+                                .json({success: false, message: err});
                     }
                     
                     const config = { 
