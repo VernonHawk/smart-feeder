@@ -11,11 +11,21 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 function mapRoutes() {
+    app.get("/", (req, res) => {
+        res.sendFile("index.html");
+    });
+
     app.use("/config", connfigRouter);
 }
 
 function startServer() {
+    const buildPath = __dirname + "/../../build/" ;
+
+    app.use(express.static(buildPath));
+    app.use(express.static(buildPath + "static"));
+    
     app.use(helmet());
+
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: true }));
 
