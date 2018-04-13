@@ -2,6 +2,7 @@
 
 const express    = require("express");
 const bodyParser = require("body-parser");
+const helmet     = require("helmet");
 
 const connfigRouter = require("./routers/configRouter");
 
@@ -14,6 +15,7 @@ function mapRoutes() {
 }
 
 function startServer() {
+    app.use(helmet());
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: true }));
 
